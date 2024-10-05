@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Transition Diagram - Add to Cart</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* States */
+        .state {
+            padding: 20px 40px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Arrow Styles */
+        .arrow {
+            width: 0; 
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #333;
+            margin: 20px 0;
+        }
+
+        /* Diagram Layout */
+        .diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Transition text */
+        .transition {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>State Transition Diagram</h1>
+
+        <div class="diagram">
+            <!-- State 1 -->
+            <div class="state">Browsing Items</div>
+            <div class="arrow"></div>
+            <div class="transition">User clicks "Add to Cart"</div>
+
+            <!-- State 2 -->
+            <div class="state">Item Added to Cart</div>
+            <div class="arrow"></div>
+            <div class="transition">User clicks "Proceed to Checkout"</div>
+
+            <!-- State 3 -->
+            <div class="state">Checkout Completed</div>
+        </div>
+    </div>
+</body>
+</html>

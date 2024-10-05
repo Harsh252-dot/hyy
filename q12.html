@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Exchange App</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #0052cc;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin-right: 2rem;
+        }
+
+        .nav li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .language-select {
+            color: #fff;
+            margin-right: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #3366ff;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 40%;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .app-button {
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .app-button img {
+            width: 20px;
+            margin-right: 0.5rem;
+        }
+
+        .hero-stats {
+            margin-top: 2rem;
+        }
+
+        .hero-stats p {
+            font-size: 1.2rem;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+
+        .feature {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 20%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0052cc;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">HelloTalk</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">HelloTalk Web</a></li>
+            </ul>
+        </nav>
+        <div class="language-select">English</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1>Talk to the World</h1>
+                <p>Learn a language for free by chatting with native speakers around the world!</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-button">
+                        <img src="ios-icon.png" alt="iOS"> Download the iOS app
+                    </a>
+                    <a href="#" class="app-button">
+                        <img src="android-icon.png" alt="Android"> Download the Android app
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <p>150+ Languages supported</p>
+                    <p>50+ million Members to chat with</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="app-mockup.png" alt="App Mockup" width="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>The Ultimate Language Exchange</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <div class="feature-title">Worldwide Community</div>
+                    <p class="feature-description">Native speakers teach you their language while you teach them yours.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-title">Text, Voice, Video, and More</div>
+                    <p class="feature-description">Chat through text, voice messages, stickers, and video calls.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🈂️</div>
+                    <div class="feature-title">Intuitive Language Tools</div>
+                    <p class="feature-description">Built-in aids for translation, pronunciation, and corrections.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <div class="feature-title">Moments</div>
+                    <p class="feature-description">Engage with the community by posting Moments and updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

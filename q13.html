@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Webflow Template</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 2rem;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cta-btn {
+            background-color: #ff6b00;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+        }
+
+        .btn-primary {
+            background-color: #ff6b00;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+        }
+
+        /* Homepages Section */
+        .homepages {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .homepages h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .homepage-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .homepage-item {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .homepage-item img {
+            width: 100%;
+        }
+
+        .homepage-item p {
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Konstructor</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Building And Construction Webflow Template</h2>
+            <a href="#" class="btn-primary">Explore Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="construction-image.jpg" alt="Construction Image">
+        </div>
+    </section>
+
+    <!-- Homepages Section -->
+    <section class="homepages">
+        <div class="container">
+            <h3>03 Construction Homepages</h3>
+            <div class="homepage-grid">
+                <div class="homepage-item">
+                    <img src="homepage1.jpg" alt="Homepage One">
+                    <p>Homepage One</p>
+                </div>
+                <div class="homepage-item">
+                    <img src="homepage2.jpg" alt="Homepage Two">
+                    <p>Homepage Two</p>
+                </div>
+                <div class="homepage-item">
+                    <img src="homepage3.jpg" alt="Homepage Three">
+                    <p>Homepage Three</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
